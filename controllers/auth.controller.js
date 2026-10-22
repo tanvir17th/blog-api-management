@@ -25,8 +25,15 @@ const register = async (req, res, next) => {
     const userResponse = newUser.toJSON();
     delete userResponse.password;
 
+    const token = jwt.sign(
+      { id: newUser.id, role: newUser.role },
+      process.env.JWT_SECRET,
+      { expiresIn: process.env.JWT_EXPIRES_IN }
+    );
+
     return res.status(201).json({
       message: 'User registered successfully.',
+      token,
       user: userResponse,
     });
   } catch (error) {
