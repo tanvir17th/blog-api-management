@@ -135,6 +135,10 @@ curl -X POST http://localhost:5000/api/blogs/create \
 
 The Postman collection is available at `blog_management_api.postman_collection.json`. Start the API before running the collection and ensure its base URL points to your server.
 
+## Documentation
+
+- **Postman API Documentation:** [View Live Documentation](https://documenter.getpostman.com/view/57229948/ad8e8687-6d92-498a-8a58-df89df63f129)
+
 Install Newman and its HTML reporter if needed:
 
 ```bash
