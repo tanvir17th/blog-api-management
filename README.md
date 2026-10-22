@@ -137,7 +137,7 @@ The Postman collection is available at `blog_management_api.postman_collection.j
 
 ## Documentation
 
-- **Postman API Documentation:** [View Live Documentation](https://documenter.getpostman.com/view/57229948/ad8e8687-6d92-498a-8a58-df89df63f129)
+- **Postman API Documentation:** [View Live Documentation](https://god.gw.postman.com/run-collection/57229948-ad8e8687-6d92-498a-8a58-df89df63f129)
 
 Install Newman and its HTML reporter if needed:
 
