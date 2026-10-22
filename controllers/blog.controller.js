@@ -27,7 +27,8 @@ const getAllBlogs = async (req, res, next) => {
     const whereClause = {};
 
     if (title) {
-      whereClause.blogTitle = { [Op.iLike]: `%${title}%` };
+      // Use Op.like for MySQL (MySQL LIKE is case-insensitive by default)
+      whereClause.blogTitle = { [Op.like]: `%${title}%` };
     }
 
     if (category) {
